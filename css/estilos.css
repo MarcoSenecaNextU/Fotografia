@@ -6,13 +6,15 @@
 body {
   font-family: "DancingScript", sans-serif, serif;
   font-size: 16px;
-	padding: 0%;
+	padding: 0px;
+	margin: 0px;
 	background-color: #02010a;
 }
 
 .contenido {
 	width: 900px;
 	margin: 0 auto;
+	padding-top: 5px;
 	animation: move-top 2s;
 	-webkit-animation: move-top 2s;
 	-moz-animation: move-top 2s;
@@ -32,22 +34,9 @@ body {
 	100% { margin-top: 0%; }
 }
 
--moz-@keyframes move-top {
-  0% { margin-top: 150%; }
-  60% {	margin-top: -5%; }
-	100% { margin-top: 0%; }
-}
-
--o-@keyframes move-top {
-  0% { margin-top: 150%; }
-  60% {	margin-top: -5%; }
-	100% { margin-top: 0%; }
-}
-
 #cabecera {
 	display: -webkit-flex;
 	display: flex;
-	padding: 1%;
 	background-color: #5b7989;
 	border-radius: 10px 10px 0px 0px;
 }
@@ -61,7 +50,7 @@ body {
 	text-align: center;
 	height: 40px;
 	color: #ffffff;
-	margin-left: 10px;
+	margin-left: 20px;
   padding: 10px 5px 10px 5px;
 	text-shadow: 2px 2px #02010a;
 }
@@ -71,14 +60,14 @@ body {
 	height: 42px;
 	width: 250px;
 	color: #ffffff;
-  margin-left:248px;
+  margin-left:265px;
 	margin-top: 24px;
 	padding: 10px 5px 0px 5px;
 }
 
 a:link[href$=".html"] {
 	font-size: 24px;
-	padding: 2%;
+	padding: 5px;
 	color:#ffffff;
 }
 
@@ -93,8 +82,9 @@ a:hover[href$=".html"] {
 
 #activo{
 	text-decoration: none;
+	pointer-events: none;
 }
- 
+
 #fotos1 {
 	width: 100%;
 	background-color: #82c3a6;
@@ -102,8 +92,8 @@ a:hover[href$=".html"] {
 
 #fotos1 .contenedor1 figure {
 	text-align: center;
-	padding: 1%;
-	margin: 3%;
+	padding: 18px;
+	margin: 18px;
 }
 
 .contenedor1 {
@@ -112,21 +102,20 @@ a:hover[href$=".html"] {
 }
 
 #fotos2 {
+	width: 100%;
 	background-color: #d5c75f;
-	border: solid 1px #d5c75f;
-	margin-top: -1px;
 }
 
 #fotos2 .contenedor2 > figure {
 	text-align: center;
-	padding: 2%;
-	margin: 2%;
+	padding: 18px;
+	margin: 18px;
 }
 
-figcaption{
+figcaption {
 	font-size: 20px;
 	margin: 0 auto;
-	padding: 3%;
+	padding: 4px;
 }
 
 .contenedor2 {
@@ -146,196 +135,99 @@ figcaption{
 #imagen2 img {
 	width: 100%;
 	box-shadow: 2px 2px 2px #02010a;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition-duration: 1s;
+	transform: rotate(0deg);
+	transition-duration: 1s;
 }
 
-#imagen2 img:hover {
-	animation: rotate 2s;
-	-webkit-animation: rotate 2s;
-	-moz-animation: rotate 2s;
-	-o-animation: rotate 2s;
-	-ms-animation: rotate 2s;
+#imagen2 img:hover{
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+	border: solid 2px black;
 	box-shadow: 3px 3px 2px #82c3a6;
-	border: solid 2px #000000;
-}
-
-@keyframes rotate {
-  0% { transform: rotate(0deg);
-       -webkit-transform: rotate(0deg);
-		   -moz-transform: rotate(0deg);
-	     -o-transform: rotate(0deg);
-		   -ms-transform: rotate(0deg); }
-
-	50% { transform: rotate(10deg);
-		    -webkit-transform: rotate(10deg);
-		    -moz-transform: rotate(10deg);
-		    -o-transform: rotate(10deg);
-		    -ms-transform: rotate(10deg); }
-
-	100% { transform: rotate(0deg);
-		     -webkit-transform: rotate(0deg);
-		     -moz-transform: rotate(0deg);
-		     -o-transform: rotate(0deg);
-		     -ms-transform: rotate(0deg); }
-}
-
--webkit-@keyframes rotate {
-  0% { transform: rotate(0deg);
-       -webkit-transform: rotate(0deg);
-		   -moz-transform: rotate(0deg);
-	     -o-transform: rotate(0deg);
-		   -ms-transform: rotate(0deg); }
-
-	50% { transform: rotate(10deg);
-		    -webkit-transform: rotate(10deg);
-		    -moz-transform: rotate(10deg);
-		    -o-transform: rotate(10deg);
-		    -ms-transform: rotate(10deg); }
-
-	100% { transform: rotate(0deg);
-		     -webkit-transform: rotate(0deg);
-		     -moz-transform: rotate(0deg);
-		     -o-transform: rotate(0deg);
-		     -ms-transform: rotate(0deg); }
-}
-
--moz-@keyframes rotate {
-  0% { transform: rotate(0deg);
-       -webkit-transform: rotate(0deg);
-		   -moz-transform: rotate(0deg);
-	     -o-transform: rotate(0deg);
-		   -ms-transform: rotate(0deg); }
-
-	50% { transform: rotate(10deg);
-		    -webkit-transform: rotate(10deg);
-		    -moz-transform: rotate(10deg);
-		    -o-transform: rotate(10deg);
-		    -ms-transform: rotate(10deg); }
-
-	100% { transform: rotate(0deg);
-		     -webkit-transform: rotate(0deg);
-		     -moz-transform: rotate(0deg);
-		     -o-transform: rotate(0deg);
-		     -ms-transform: rotate(0deg); }
-}
-
--o-@keyframes rotate {
-  0% { transform: rotate(0deg);
-       -webkit-transform: rotate(0deg);
-		   -moz-transform: rotate(0deg);
-	     -o-transform: rotate(0deg);
-		   -ms-transform: rotate(0deg); }
-
-	50% { transform: rotate(20deg);
-		    -webkit-transform: rotate(20deg);
-		    -moz-transform: rotate(20deg);
-		    -o-transform: rotate(20deg);
-		    -ms-transform: rotate(20deg); }
-
-	100% { transform: rotate(0deg);
-		     -webkit-transform: rotate(0deg);
-		     -moz-transform: rotate(0deg);
-		     -o-transform: rotate(0deg);
-		     -ms-transform: rotate(0deg); }
 }
 
 #imagen3 img {
 	width: 100%;
 	box-shadow: 2px 2px 2px #02010a;
+	-webkit-transform: translate(0px, 0px);
+	-webkit-transition-duration: 1s;
+	transform: translate(0px, 0px);
+	transition-duration: 1s;
 }
 
 #imagen3 img:hover {
-	animation: traslado 2s;
-	-webkit-animation: traslado 2s;
-	-moz-animation: traslado 2s;
-	-o-animation: traslado 2s;
-	-ms-animation: traslado 2s;
+	-webkit-transform: translate(20px, -5px);
+	transform: translate(20px, -5px);
+	border: solid 2px black;
 	box-shadow: 3px 3px 2px #82c3a6;
-	border: solid 2px #000000;
 }
 
-@keyframes traslado {
-		0% { transform: translate(0px, -0px);
-			   -webkit-transform: translate(0px, -0px);
-			   -moz-transform: translate(0px, -0px);
-			   -o-transform: translate(0px, -0px);
-			   -ms-transform: translate(0px, -0px); }
-
-		50% { transform: translate(20px, -5px);
-			    -webkit-transform: translate(20px, -5px);
-			    -moz-transform: translate(20px, -5px);
-			    -o-transform: translate(20px, -5px);
-			    -ms-transform: translate(20px, -5px); }
-
-		100% { transform: translate(0px, -0px);
-			     -webkit-transform: translate(0px, -0px);
-			     -moz-transform: translate(0px, -0px);
-			     -o-transform: translate(0px, -0px);
-			     -ms-transform: translate(0px, -0px); }
-	}
-
--webkit-@keyframes traslado {
-	0% { transform: translate(0px, -0px);
-		   -webkit-transform: translate(0px, -0px);
-		   -moz-transform: translate(0px, -0px);
-		   -o-transform: translate(0px, -0px);
-		   -ms-transform: translate(0px, -0px); }
-
-	50% { transform: translate(20px, -5px);
-				-webkit-transform: translate(20px, -5px);
-				-moz-transform: translate(20px, -5px);
-				-o-transform: translate(20px, -5px);
-				-ms-transform: translate(20px, -5px); }
-
-	100% { transform: translate(0px, -0px);
-		     -webkit-transform: translate(0px, -0px);
-		     -moz-transform: translate(0px, -0px);
-		     -o-transform: translate(0px, -0px);
-		     -ms-transform: translate(0px, -0px); }
+.contenedor-paisajes {
+	display: -webkit-flex;
+	display: flex;
 }
 
--moz-@keyframes traslado {
-	0% { transform: translate(0px, -0px);
-		   -webkit-transform: translate(0px, -0px);
-		   -moz-transform: translate(0px, -0px);
-		   -o-transform: translate(0px, -0px);
-		   -ms-transform: translate(0px, -0px); }
-
-	50% { transform: translate(20px, -5px);
-				-webkit-transform: translate(20px, -5px);
-				-moz-transform: translate(20px, -5px);
-				-o-transform: translate(20px, -5px);
-				-ms-transform: translate(20px, -5px); }
-
-	100% { transform: translate(0px, -0px);
-		     -webkit-transform: translate(0px, -0px);
-		     -moz-transform: translate(0px, -0px);
-		     -o-transform: translate(0px, -0px);
-		     -ms-transform: translate(0px, -0px); }
+#paisaje1, #paisaje2, #paisaje3, #paisaje4, #paisaje5, #paisaje6 {
+	width: 100%;
 }
 
--o-@keyframes traslado {
-	0% { transform: translate(0px, -0px);
-		   -webkit-transform: translate(0px, -0px);
-		   -moz-transform: translate(0px, -0px);
-		   -o-transform: translate(0px, -0px);
-		   -ms-transform: translate(0px, -0px); }
+#paisaje1 img, #paisaje2 img, #paisaje3 img, #paisaje4 img, #paisaje5 img, #paisaje6 img{
+	width: 100%;
+	box-shadow: 2px 2px 2px #02010a;
+}
 
-	50% { transform: translate(20px, -5px);
-			-webkit-transform: translate(20px, -5px);
-			-moz-transform: translate(20px, -5px);
-			-o-transform: translate(20px, -5px);
-			-ms-transform: translate(20px, -5px); }
+#paisajes {
+	background-color: #d5c75f;
+}
 
-	100% { transform: translate(0px, -0px);
-		     -webkit-transform: translate(0px, -0px);
-		     -moz-transform: translate(0px, -0px);
-		     -o-transform: translate(0px, -0px);
-		     -ms-transform: translate(0px, -0px); }
+#paisaje1 img{
+	filter:blur(10px);
+}
+
+#paisaje3 img{
+	filter: sepia(90%);
+}
+
+#paisaje2 img, #paisaje4 img, #paisaje6 img{
+	filter: grayscale(100%);
+}
+
+.contenedor-retratos {
+	display: -webkit-flex;
+	display: flex;
+}
+
+#retrato1, #retrato2, #retrato3, #retrato4, #retrato5, #retrato6 {
+	width: 100%;
+}
+
+#retrato1 img, #retrato2 img, #retrato3 img, #retrato4 img, #retrato5 img, #retrato6 img{
+	width: 100%;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+#retratos {
+	background-color: #d5c75f;
+}
+
+#retrato1 img{
+	filter:blur(10px);
+}
+
+#retrato3 img{
+	filter: sepia(90%);
+}
+
+#retrato2 img, #retrato4 img, #retrato6 img{
+	filter: grayscale(100%);
 }
 
 #pie-pagina {
+	width: 100%;
 	background-color: #C6d5c5;
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px
 }
 
 .contenedor3 {
@@ -345,12 +237,34 @@ figcaption{
 	flex-flow: nowrap;
 }
 
+.contenedor3 p{
+	font-size: 20px;
+	color:#000000;
+}
+
 #columna1, #columna2, #columna3, #columna4 {
 	width: 25%;
 	margin: 0 auto;
-	padding: 2%;
+	padding: 20px;
 }
 
+#columna1 a[href$=".com"] {
+	text-decoration: none;
+}
+
+#columna3 img[src$=".png"] {
+	width: 20%;
+}
+
+#columna3 a{
+	font-size: 20px;
+	color:#000000;
+	text-decoration: none;
+}
+
+/*******************************/
+/*  PANTALLAS DE MAXIMO 600PX  */
+/*******************************/
 @media screen and (max-width: 600px) {
 	#titulo-nav {
 		display: -webkit-flex; /* Safari */
@@ -361,19 +275,25 @@ figcaption{
 	}
 
 	#cabecera h1 {
+		font-size: 50px;
 		text-align: center;
 		color: #ffffff;
 		margin: 0 auto;
-		padding: 10px 5px 10px 5px;
-		text-shadow: 2px 2px #02010a;
+		padding: 10px 0px 10px 0px
 	}
 
 	#cabecera #titulo-nav > nav {
 		text-align: center;
+		width: 100%;
 		color: #ffffff;
-		margin: 0 auto;
-		padding: 10px 5px 0px 5px;
-		text-shadow: 2px 2px #02010a;
+	 	margin-top: 24px;
+		margin-left:0px;
+		padding: 10px 5px 25px 5px;
+	}
+
+	a:link[href$=".html"] {
+		font-size: 45px;
+		padding: 10px;
 	}
 
 	.contenedor2 {
@@ -387,8 +307,39 @@ figcaption{
 			width: 100%;
 	}
 
+	figcaption{
+		font-size: 50px;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	.contenedor-paisajes {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	  -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+	  flex-flow: row-reverse wrap;
+	}
+
+	#paisaje1, #paisaje2, #paisaje3, #paisaje4, #paisaje5, #paisaje6 {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.contenedor-retratos {
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	  -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+	  flex-flow: row-reverse wrap;
+	}
+
+	#retrato1, #retrato2, #retrato3, #retrato4, #retrato5, #retrato6 {
+		width: 100%;
+		padding: 20px;
+	}
+
 	.contenedor3 {
 		margin: 0 auto;
+		margin-left: 20px;
 		display: -webkit-flex; /* Safari */
 		display: flex;
 		-webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
@@ -398,7 +349,23 @@ figcaption{
 	#columna1, #columna2, #columna3, #columna4 {
 		width: 100%;
 		margin: 0 auto;
-		padding: 1%;
-		border: solid 2px black;
+		padding: 12px;
+}
+
+	.contenedor3 p{
+		font-size: 50px;
+	}
+
+	.contenedor3 h1{
+		font-size: 70px;
+	}
+
+	#columna3 a{
+		font-size: 50px;
+		margin: 0 auto;
+	}
+
+	#columna3 img[src$=".png"] {
+		width: 9%;
 	}
 }
