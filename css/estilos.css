@@ -76,21 +76,25 @@ body {
 	padding: 10px 5px 0px 5px;
 }
 
-a[href$=".html"] {
+a:link[href$=".html"] {
 	font-size: 24px;
 	padding: 2%;
 	color:#ffffff;
 }
 
-a[href$=".html"]:hover:visited {
+a:visited[href$=".html"], a:active[href$=".html"] {
 	color: #ffffff;
 }
 
-a[href$=".html"]:active {
+a:hover[href$=".html"] {
 	color: #ffffff;
 	text-decoration: none;
 }
 
+#activo{
+	text-decoration: none;
+}
+ 
 #fotos1 {
 	width: 100%;
 	background-color: #82c3a6;
