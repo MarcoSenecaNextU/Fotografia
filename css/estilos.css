@@ -102,8 +102,9 @@ a:hover[href$=".html"] {
 }
 
 #fotos2 {
-	width: 100%;
+	width: 99.8%;
 	background-color: #d5c75f;
+	border: solid 1px #d5c75f;
 }
 
 #fotos2 .contenedor2 > figure {
@@ -275,7 +276,7 @@ figcaption {
 	}
 
 	#cabecera h1 {
-		font-size: 50px;
+		font-size: 60px;
 		text-align: center;
 		color: #ffffff;
 		margin: 0 auto;
